@@ -23,13 +23,6 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
-                <com.google.android.material.tabs.TabLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:id="@+id/tabs"
-                    android:background="@drawable/white_grey_border_bottom">
-
-                </com.google.android.material.tabs.TabLayout>
 
             </com.google.android.material.appbar.AppBarLayout>
 
@@ -42,12 +35,14 @@
             android:layout_below="@+id/relLayoutTopBar"
             android:layout_above="@+id/bottomBar">
 
-            <androidx.viewpager.widget.ViewPager
+            <TextView
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/container">
-
-            </androidx.viewpager.widget.ViewPager>
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:textSize="30sp"
+                android:id="@+id/activityTitle1"
+                android:textAlignment="center"
+                />
 
         </RelativeLayout>
 
@@ -57,20 +52,20 @@
             android:id="@+id/bottomBar"
             android:layout_alignParentBottom="true">
 
-       <com.google.android.material.bottomnavigation.BottomNavigationView
-           android:layout_width="match_parent"
-           android:layout_height="match_parent"
-           android:id="@+id/bottomNavView_Bar"
-           android:background="@drawable/white_grey_border_top"
-           app:menu="@menu/bottom_navigation_menu"
-          >
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/bottomNavView_Bar"
+                android:background="@drawable/white_grey_border_top"
+                app:menu="@menu/bottom_navigation_menu"
+                >
 
 
-       </com.google.android.material.bottomnavigation.BottomNavigationView>
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
         </RelativeLayout>
 
     </RelativeLayout>
 
- </androidx.coordinatorlayout.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
